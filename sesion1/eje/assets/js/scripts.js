@@ -28,6 +28,6 @@ $(document).ready(function() {
 
     setInterval(function() {
         alert("Estimado Pasajero, se le recuerda que para abordar el avión debe tener en mano su pasaporte y su boleto de embarque. Manténgase atento a los avisos mediante esta plataforma.");
-    }, 20000);
+    }, 10000);
 
 });
