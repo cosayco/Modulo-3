@@ -10,31 +10,31 @@
     
     <div class="calculator">
 
-        <input type="text" class="calculator-screen" value="0" id="screen" placeholer="0" disabled />
+        <input type="text" class="calculator-screen" placeholder="0" id="screen" disabled />
       
         <div class="calculator-keys">
       
-          <button type="button" class="operator" value="+">+</button>
-          <button type="button" class="operator" value="-">-</button>
-          <button type="button" class="operator" value="*">&times;</button>
-          <button type="button" class="operator" value="/">&divide;</button>
+          <button type="button" class="operator" value="+" id="+" onclick="getValue('+')">+</button>
+          <button type="button" class="operator" value="-" id="-" onclick="getValue('-')">-</button>
+          <button type="button" class="operator" value="*" id="*" onclick="getValue('*')">*</button>
+          <button type="button" class="operator" value="/" id="/" onclick="getValue('/')">/</button>
       
-          <button type="button" value="7" onclick="getValue(this)">7</button>
-          <button type="button" value="8">8</button>
-          <button type="button" value="9">9</button>
-      
-      
-          <button type="button" value="4">4</button>
-          <button type="button" value="5">5</button>
-          <button type="button" value="6">6</button>
+          <button type="button" id="7" value="7" onclick="getValue('7')">7</button>
+          <button type="button" id="8" value="8" onclick="getValue('8')">8</button>
+          <button type="button" id="9" value="9" onclick="getValue('9')">9</button>
       
       
-          <button type="button" value="1">1</button>
-          <button type="button" value="2">2</button>
-          <button type="button" value="3">3</button>
+          <button type="button" id="4" value="4" onclick="getValue('4')">4</button>
+          <button type="button" id="5" value="5" onclick="getValue('5')">5</button>
+          <button type="button" id="6" value="6" onclick="getValue('6')">6</button>
       
       
-          <button type="button" value="0" onclick="getZero()">0</button>
+          <button type="button" id="1" value="1" onclick="getValue('1')">1</button>
+          <button type="button" id="2" value="2" onclick="getValue('2')">2</button>
+          <button type="button" id="3" value="3" onclick="getValue('3')">3</button>
+      
+      
+          <button type="button" id="0" value="0" onclick="getZero()">0</button>
           <button type="button" class="decimal" value="." onclick="addDecimal()">.</button>
           <button type="button" class="all-clear" value="all-clear" onclick="clearScreen()">AC</button>
       
