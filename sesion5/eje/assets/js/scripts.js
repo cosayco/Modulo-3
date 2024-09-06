@@ -9,10 +9,16 @@ class usuario {
 }
 
 function presentar(){
-    let nuevoUsuario = new usuario(document.getElementsByName("name"),document.getElementsByName("email"),document.getElementsByName("work"),document.getElementsByName("phone"),document.getElementsByName("bio"));
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let work = document.getElementById("work").value;
+    let phone = document.getElementById("phone").value;
+    let bio = document.getElementById("bio").value;
+    let nuevoUsuario = new usuario(name, email, work, phone, bio);
 
-    document.getElementById("correo").value = nuevoUsuario.email;
-    document.getElementById("telefono").value = nuevoUsuario.telefono;
-    document.getElementById("sobreMi").value = nuevoUsuario.acercade;
-
+    document.getElementById("nombre").textContent = nuevoUsuario.nombre;
+    document.getElementById("trabajo").textContent = nuevoUsuario.trabajo;
+    document.getElementById("correo").textContent = nuevoUsuario.email;
+    document.getElementById("telefono").textContent = nuevoUsuario.telefono;
+    document.getElementById("sobreMi").textContent = nuevoUsuario.acercade;
 }

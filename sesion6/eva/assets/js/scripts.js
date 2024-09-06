@@ -9,9 +9,9 @@
 • Debes utilizar métodos propios de los arreglos como “push”, “filter” o “length” para manipular la lista de tareas.
 */
 
-class Tarea {
-    constructor(descripcion, estado) {
-        this.descripcion = descripcion
-        this.estado = estado        
-    }
+
+var tarea = {
+    descripcion: this.descripcion,
+    estado: this.estado
+
 }
